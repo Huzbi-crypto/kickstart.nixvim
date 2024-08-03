@@ -6,36 +6,36 @@
       enable = true;
 
       # Document existing key chains
-      registrations = {
-        "<leader>c" = {
-          name = "[C]ode";
-          _ = "which_key_ignore";
-        };
-        "<leader>d" = {
-          name = "[D]ocument";
-          _ = "which_key_ignore";
-        };
-        "<leader>r" = {
-          name = "[R]ename";
-          _ = "which_key_ignore";
-        };
-        "<leader>s" = {
-          name = "[S]earch";
-          _ = "which_key_ignore";
-        };
-        "<leader>w" = {
-          name = "[W]orkspace";
-          _ = "which_key_ignore";
-        };
-        "<leader>t" = {
-          name = "[T]oggle";
-          _ = "which_key_ignore";
-        };
-        "<leader>h" = {
-          name = "Git [H]unk";
-          _ = "which_key_ignore";
-        };
-      };
-    };
+      settings.spec = [
+        {
+          __unkeyed-1 = "<leader>d";
+          desc = "[D]ocument";
+        }
+        {
+          __unkeyed-1 = "<leader>c";
+          desc = "[C]ode";
+        }
+        {
+          __unkeyed-1 = "<leader>r";
+          desc = "[R]ename";
+        }
+        {
+          __unkeyed-1 = "<leader>s";
+          desc = "[S]earch";
+        }
+        {
+          __unkeyed-1 = "<leader>w";
+          desc = "[W]orkspace";
+        }
+        {
+          __unkeyed-1 = "<leader>t";
+          desc = "[T]oggle";
+        }
+        {
+          __unkeyed-1 = "<leader>h";
+          desc = "Git [H]unk";
+        }
+      ];
+   };
   };
 }
