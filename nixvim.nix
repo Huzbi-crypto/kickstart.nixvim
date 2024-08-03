@@ -1,15 +1,5 @@
 { pkgs, inputs, ... }: {
   imports = [
-    # NOTE: The first thing you will want to do is uncommented on of the three imports below
-    # depending on which module you chose to use to install Nixvim.
-    #
-    # Uncomment if you are using the home-manager module
-    #inputs.nixvim.homeManagerModules.nixvim
-    # Uncomment if you are using the nixos module
-    #inputs.nixvim.nixosModules.nixvim
-    # Uncomment if you are using the nix-darwin module
-    #inputs.nixvim.nixDarwinModules.nixvim
-
     # Plugins
     ./plugins/gitsigns.nix
     ./plugins/which-key.nix
@@ -141,7 +131,7 @@
       maplocalleader = " ";
 
       # Set to true if you have a Nerd Font installed and selected in the terminal
-      have_nerd_font = false;
+      have_nerd_font = true;
     };
 
     # [[ Setting options ]]
@@ -154,7 +144,7 @@
       number = true;
       # You can also add relative line numbers, to help with jumping.
       #  Experiment for yourself to see if you like it!
-      #relativenumber = true
+      relativenumber = true;
 
       # Enable mouse mode, can be useful for resizing splits for example!
       mouse = "a";
