@@ -6,17 +6,23 @@
       enable = true;
 
       # TODO: Don't think I need this as nixGrammars is true which should atuo install these???
-      ensureInstalled = [
-        "bash"
-        "c"
-        "diff"
-        "html"
-        "lua"
-        "luadoc"
-        "markdown"
-        "vim"
-        "vimdoc"
-      ];
+      settings = {
+        ensureInstalled = [
+          "bash"
+          "c"
+          "diff"
+          "html"
+          "lua"
+          "luadoc"
+          "markdown"
+          "vim"
+          "vimdoc"
+        ];
+
+        indent.enable = true;
+
+      };
+
 
       # TODO: Figure out how to do this
       #highlight = {
@@ -30,7 +36,6 @@
       #  ];
       #};
 
-      indent = true;
       #indent = {
       #enable = true;
       # TODO: Figure out how to do this
