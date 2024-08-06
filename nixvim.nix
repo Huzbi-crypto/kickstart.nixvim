@@ -134,6 +134,14 @@
       have_nerd_font = true;
     };
 
+    # have clipboard installed
+    clipboard = {
+      providers = {
+        wl-copy.enable = true; # For Wayland
+        xsel.enable = true; # For X11
+      };
+    };
+
     # [[ Setting options ]]
     # See `:help vim.opt`
     # NOTE: You can change these options as you wish!
